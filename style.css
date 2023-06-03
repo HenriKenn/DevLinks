@@ -89,6 +89,10 @@ body * {
   border-radius: 9999px;
 }
 
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
+}
+
 .light #switch button {
   right: 0;
   left: initial;
@@ -150,13 +154,15 @@ ul li a:hover {
   background: var(--highlight-color);
 }
 
+/* final da pagina */
 footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
 }
 
-@media (min-width: 700px){
+/* ajustes para dispositivos mob e desktop */
+@media (min-width: 700px) {
   :root {
     --bg-url: url(./assets/bg-desktop.jpg);
   }
@@ -164,3 +170,14 @@ footer {
     --bg-url: url(/assets/bg-desktop-light.jpg);
   }
 }
+
+/* animação do swich */
+
+/* @keyframes slide-in {
+  fron {
+    left: 0;
+  }
+  to {
+     left: 50;
+  }
+} */
