@@ -163,6 +163,7 @@ footer {
 }
 
 /* ajustes para dispositivos mob e desktop */
+
 @media (min-width: 700px) {
   :root {
     --bg-url: url(./assets/bg-desktop.jpg);
