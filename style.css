@@ -26,7 +26,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
-  height: 100vh;
+  height: 94vh;
 }
 
 body * {
@@ -73,7 +73,7 @@ body * {
   border: 0;
   border-radius: 50%;
   position: absolute;
-  left: 0;
+
   z-index: 1;
   transform: translateY(-50%);
 }
@@ -91,6 +91,7 @@ body * {
 
 #switch button:hover {
   outline: 8px solid var(--highlight-color);
+  transition: .3s ease-in-out;
 }
 
 .light #switch button {
@@ -171,13 +172,22 @@ footer {
   }
 }
 
-/* animação do swich */
+/* /* animação do switch */
 
-/* @keyframes slide-in {
-  fron {
-    left: 0;
+/* @keyframes switch {
+  from {
+    left: 0%;
   }
   to {
-     left: 50;
+    left: 50%;
+  }
+}
+
+@keyframes reverse {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 50;
   }
 } */
